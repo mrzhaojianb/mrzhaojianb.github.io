@@ -113,7 +113,6 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="Mr.zhao的个人博客" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -248,14 +247,14 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2019-12-08T21:49:25+08:00"
-              content="2019-12-08">
-          12-08
+              datetime="2019-12-09T21:14:08+08:00"
+              content="2019-12-09">
+          12-09
         </time>
       </div>
 
       <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/08/hello-world/" itemprop="url">
+          <a class="post-title-link" href="/2019/12/09/hello-world/" itemprop="url">
             <span itemprop="name">Hello World</span>
           </a>
       </h2>
@@ -472,11 +471,9 @@ setInterval("createtime()",250);
         .then(({ results }) => {
           if (results.length > 0) {
             var counter = results[0];
+              leancloudSelector(url).innerText = counter.time + 1;
             Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
               .then(response => response.json())
-              .then(() => {
-                leancloudSelector(url).innerText = counter.time + 1;
-              })
               .catch(error => {
                 console.log('Failed to save visitor count', error);
               })

@@ -259,7 +259,6 @@
   <meta name="robots" content="all" />
   <meta name="robots" content="index,follow"/>
   <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
-<link rel="alternate" href="/atom.xml" title="Mr.zhao的个人博客" type="application/atom+xml">
 </head>
 <body>
   <script type="text/plain"  src="http://www.qq.com/404/search_children.js"
@@ -482,11 +481,9 @@ setInterval("createtime()",250);
         .then(({ results }) => {
           if (results.length > 0) {
             var counter = results[0];
+              leancloudSelector(url).innerText = counter.time + 1;
             Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
               .then(response => response.json())
-              .then(() => {
-                leancloudSelector(url).innerText = counter.time + 1;
-              })
               .catch(error => {
                 console.log('Failed to save visitor count', error);
               })
