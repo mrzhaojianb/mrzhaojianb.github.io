@@ -61,28 +61,30 @@
         }
     })();
 </script>
-  <meta name="description" content="一个无聊的人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr.zhao的个人博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;zhcblogs.ml&#x2F;index.html">
+  <meta name="description" content="1. JavaScript嵌入页面的方式1.行间事件（主要用于事件） &amp;lt;input type&#x3D;&amp;quot;button&amp;quot; name&#x3D;&amp;quot;&amp;quot; onclick&#x3D;&amp;quot;alert(&amp;#39;ok！&amp;#39;);&amp;quot;&amp;gt; 2.页面script标签嵌入 1&amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quo">
+<meta name="keywords" content="HTML,JaveScipt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JaveScript">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhcblogs.ml&#x2F;2019&#x2F;12&#x2F;12&#x2F;JaveScript&#x2F;index.html">
 <meta property="og:site_name" content="Mr.zhao的个人博客">
-<meta property="og:description" content="一个无聊的人">
+<meta property="og:description" content="1. JavaScript嵌入页面的方式1.行间事件（主要用于事件） &amp;lt;input type&#x3D;&amp;quot;button&amp;quot; name&#x3D;&amp;quot;&amp;quot; onclick&#x3D;&amp;quot;alert(&amp;#39;ok！&amp;#39;);&amp;quot;&amp;gt; 2.页面script标签嵌入 1&amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quo">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-12T09:55:49.054Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://zhcblogs.ml/">
+<link rel="canonical" href="https://zhcblogs.ml/2019/12/12/JaveScript/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>Mr.zhao的个人博客</title>
+  <title>JaveScript | Mr.zhao的个人博客</title>
   
 
 
@@ -230,10 +232,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zhcblogs.ml/2019/12/12/JaveScript/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -247,8 +249,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/12/JaveScript/" class="post-title-link" itemprop="url">JaveScript</a>
+          JaveScript
         </h1>
 
         <div class="post-meta">
@@ -320,7 +321,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-JavaScript嵌入页面的方式"><a href="#1-JavaScript嵌入页面的方式" class="headerlink" title="1. JavaScript嵌入页面的方式"></a>1. JavaScript嵌入页面的方式</h4><p>1.行间事件（主要用于事件）</p>
+        <h4 id="1-JavaScript嵌入页面的方式"><a href="#1-JavaScript嵌入页面的方式" class="headerlink" title="1. JavaScript嵌入页面的方式"></a>1. JavaScript嵌入页面的方式</h4><p>1.行间事件（主要用于事件）</p>
 <p><code>&lt;input type=&quot;button&quot; name=&quot;&quot; onclick=&quot;alert(&#39;ok！&#39;);&quot;&gt;</code></p>
 <p>2.页面script标签嵌入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    alert(&#39;ok！&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
@@ -335,231 +336,89 @@
 <p>4、undefined undefined类型，变量声明未初始化，它的值就是undefined</p>
 <p>5、null null类型，表示空对象，如果定义的变量将来准备保存对象，可以将变量初始化为null,在页面上获取不到对象，返回的值就是null</p>
 <h6 id="1种复合类型："><a href="#1种复合类型：" class="headerlink" title="1种复合类型："></a>1种复合类型：</h6><p>object</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/12/12/JaveScript/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<a id="more"></a>
+<h6 id="变量、函数、属性、函数参数命名规范"><a href="#变量、函数、属性、函数参数命名规范" class="headerlink" title="变量、函数、属性、函数参数命名规范"></a>变量、函数、属性、函数参数命名规范</h6><p>1、区分大小写<br>2、第一个字符必须是字母、下划线（_）或者美元符号（$）<br>3、其他字符可以是字母、下划线、美元符或数字</p>
+<h6 id="匈牙利命名风格："><a href="#匈牙利命名风格：" class="headerlink" title="匈牙利命名风格："></a>匈牙利命名风格：</h6><p>对象o Object 比如：oDiv<br>数组a Array 比如：aItems<br>字符串s String 比如：sUserName<br>整数i Integer 比如：iItemCount<br>布尔值b Boolean 比如：bIsComplete<br>浮点数f Float 比如：fPrice<br>函数fn Function 比如：fnHandler<br>正则表达式re RegExp 比如：reEmailCheck</p>
+<h4 id="3-操作元素属性"><a href="#3-操作元素属性" class="headerlink" title="3.操作元素属性"></a>3.操作元素属性</h4><p>获取的页面元素，就可以对页面元素的属性进行操作，属性的操作包括属性的读和写。</p>
+<p>操作属性的方法<br>1、“.” 操作<br>2、“[ ]”操作</p>
+<p>属性写法</p>
+<p>1、html的属性和js里面属性写法一样<br>2、“class” 属性写成 “className”<br>3、“style” 属性里面的属性，有横杠的改成驼峰式，比如：“font-size”，改成”style.fontSize”</p>
+<h4 id="4-条件语句"><a href="#4-条件语句" class="headerlink" title="4.条件语句"></a>4.条件语句</h4><p>通过条件来控制程序的走向，就需要用到条件语句。</p>
+<p>运算符<br>1、算术运算符： +(加)、 -(减)、 *(乘)、 /(除)、 %(求余)</p>
+<p>2、赋值运算符：=、 +=、 -=、 *=、 /=、 %=<br>3、条件运算符：==、===、&gt;、&gt;=、&lt;、&lt;=、!=、&amp;&amp;(而且)、||(或者)、!(否)</p>
+<h4 id="5-数组及操作方法"><a href="#5-数组及操作方法" class="headerlink" title="5.数组及操作方法"></a>5.数组及操作方法</h4><p>1、获取数组的长度：aList.length;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">alert(aList.length); &#x2F;&#x2F; 弹出4</span></pre></td></tr></table></figure>
+<p>2、用下标操作数组的某个数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">aList[0];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">alert(aList[0]); &#x2F;&#x2F; 弹出1</span></pre></td></tr></table></figure>
+<p>3、join() 将数组成员通过一个分隔符合并成字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">alert(aList.join(&#39;-&#39;)); &#x2F;&#x2F; 弹出 1-2-3-4</span></pre></td></tr></table></figure>
+<p>4、push() 和 pop() 从数组最后增加成员或删除成员</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">aList.push(5);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">alert(aList); &#x2F;&#x2F;弹出1,2,3,4,5</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">aList.pop();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">alert(aList); &#x2F;&#x2F; 弹出1,2,3,4</span></pre></td></tr></table></figure>
+<p>5、unshift()和 shift() 从数组前面增加成员或删除成员</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">aList.unshift(5);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">alert(aList); &#x2F;&#x2F;弹出5,1,2,3,4</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">aList.shift();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">alert(aList); &#x2F;&#x2F; 弹出1,2,3,4</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">6、reverse() 将数组反转</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">aList.reverse();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">alert(aList);  &#x2F;&#x2F; 弹出4,3,2,1</span></pre></td></tr></table></figure>
+<p>7、indexOf() 返回数组中元素第一次出现的索引值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4,1,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">alert(aList.indexOf(1));</span></pre></td></tr></table></figure>
+<p>8、splice() 在数组中增加或删除成员</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var aList &#x3D; [1,2,3,4];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">aList.splice(2,1,7,8,9); &#x2F;&#x2F;从第2个元素开始，删除1个元素，然后在此位置增加&#39;7,8,9&#39;三个元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">alert(aList); &#x2F;&#x2F;弹出 1,2,7,8,9,4</span></pre></td></tr></table></figure>
+<p>多维数组<br>多维数组指的是数组的成员也是数组的数组。</p>
+<h4 id="6-调试程序的方法"><a href="#6-调试程序的方法" class="headerlink" title="6.调试程序的方法"></a>6.调试程序的方法</h4><p>1、alert</p>
+<p>2、console.log</p>
+<p>3、document.title</p>
+
     </div>
     <div>
       
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Mr.zhao 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Mr.zhao 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/HTML/" rel="tag"># HTML</a>
+              <a href="/tags/JaveScipt/" rel="tag"># JaveScipt</a>
+          </div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zhcblogs.ml/2019/12/11/hahaha/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mr.zhao">
-      <meta itemprop="description" content="一个无聊的人">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr.zhao的个人博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/11/hahaha/" class="post-title-link" itemprop="url">hahaha</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-11 18:51:00 / 修改时间：20:10:44" itemprop="dateCreated datePublished" datetime="2019-12-11T18:51:00+08:00">2019-12-11</time>
-            </span>
-
-          
-            <span id="/2019/12/11/hahaha/" class="post-meta-item leancloud_visitors" data-flag-title="hahaha" title="热度">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">热度：</span>
-              <span class="leancloud-visitors-count"></span>
-			  <span>℃</span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/12/11/hahaha/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/11/hahaha/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">aaaa</span></pre></td></tr></table></figure>
-<h3 id="结合《策略：如何在复杂的世界里成为高手》的观点，我想联系我的生活，谈谈我的看法。"><a href="#结合《策略：如何在复杂的世界里成为高手》的观点，我想联系我的生活，谈谈我的看法。" class="headerlink" title="结合《策略：如何在复杂的世界里成为高手》的观点，我想联系我的生活，谈谈我的看法。"></a>结合《策略：如何在复杂的世界里成为高手》的观点，我想联系我的生活，谈谈我的看法。</h3><p>文章一开始介绍了生活中的没有策略会出现的问题，比如：在某种特殊的场合，不知道什么话该，说什么话不该说；在办公室，上级交代工作，而你初入职场，没有任何经验，未来全靠想象，最后业绩目标无法完成；与能影响你未来的人交往，不知道什么时候该表现自己，什么时候该沉默……</p>
-<p>我分析了一下这种问题出现的主要原因：由于平时这种类型的事出现频率不够多，没有多的接触到影响到你未来的关键转折点，来临时，无法从以往的经验中获得答案，只能凭借本能采取行动，往往不能做到想要达到的效果，甚至会变得更糟。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/12/11/hahaha/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    <div>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zhcblogs.ml/2019/12/10/%E7%AC%AC%E4%B8%80%E5%A4%A9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mr.zhao">
-      <meta itemprop="description" content="一个无聊的人">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr.zhao的个人博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/10/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="post-title-link" itemprop="url">第一天</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-10 00:20:00 / 修改时间：00:31:18" itemprop="dateCreated datePublished" datetime="2019-12-10T00:20:00+08:00">2019-12-10</time>
-            </span>
-
-          
-            <span id="/2019/12/10/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="post-meta-item leancloud_visitors" data-flag-title="第一天" title="热度">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">热度：</span>
-              <span class="leancloud-visitors-count"></span>
-			  <span>℃</span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/12/10/%E7%AC%AC%E4%B8%80%E5%A4%A9/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/10/%E7%AC%AC%E4%B8%80%E5%A4%A9/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>15</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>have a good night!</p>
-
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/11/hahaha/" rel="prev" title="hahaha">
+      <i class="fa fa-chevron-left"></i> hahaha
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-    <div>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
@@ -567,12 +426,10 @@
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -619,6 +476,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-JavaScript嵌入页面的方式"><span class="nav-text">1. JavaScript嵌入页面的方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-变量类型"><span class="nav-text">2. 变量类型</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#5种基本数据类型："><span class="nav-text">5种基本数据类型：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1种复合类型："><span class="nav-text">1种复合类型：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#变量、函数、属性、函数参数命名规范"><span class="nav-text">变量、函数、属性、函数参数命名规范</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#匈牙利命名风格："><span class="nav-text">匈牙利命名风格：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-操作元素属性"><span class="nav-text">3.操作元素属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-条件语句"><span class="nav-text">4.条件语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-数组及操作方法"><span class="nav-text">5.数组及操作方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-调试程序的方法"><span class="nav-text">6.调试程序的方法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
