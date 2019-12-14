@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhcblogs.ml/"/>
-  <updated>2019-12-12T09:55:49.054Z</updated>
+  <updated>2019-12-14T07:31:25.374Z</updated>
   <id>https://zhcblogs.ml/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python_Mysql操作之坑</title>
+    <link href="https://zhcblogs.ml/2019/12/14/python-Mysql%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%9D%91/"/>
+    <id>https://zhcblogs.ml/2019/12/14/python-Mysql%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%9D%91/</id>
+    <published>2019-12-14T07:21:00.000Z</published>
+    <updated>2019-12-14T07:31:25.374Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="python在直接插入mysql时内容带有引号会报错"><a href="#python在直接插入mysql时内容带有引号会报错" class="headerlink" title="python在直接插入mysql时内容带有引号会报错"></a>python在直接插入mysql时内容带有引号会报错</h4><p>处理方法：</p><p>1.使用pymysql的一个方法自动转义可避坑</p><p><strong>pymysql.escape_string(str)</strong></p><p>*<em>str填要转义的字符 *</em></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">insert_dialogues_sql &#x3D; &quot;INSERT INTO dialogues(&#96;movie_id&#96;,&#96;ccontent&#96;,&#96;econtent&#96;,&#96;start_time&#96;,&#96;created_at&#96;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">VALUES(&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;)&quot; % (movie_id, pymysql.escape_string(ccontent),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">pymysql.escape_string(econtent),&#39;0&#39;,created_at)</span></pre></td></tr></table></figure><p>2.使用转义字符咯</p><p>个人不喜</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;python在直接插入mysql时内容带有引号会报错&quot;&gt;&lt;a href=&quot;#python在直接插入mysql时内容带有引号会报错&quot; class=&quot;headerlink&quot; title=&quot;python在直接插入mysql时内容带有引号会报错&quot;&gt;&lt;/a&gt;python在直
+      
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="https://zhcblogs.ml/categories/mysql/"/>
+    
+    
+      <category term="python" scheme="https://zhcblogs.ml/tags/python/"/>
+    
+      <category term="mysql" scheme="https://zhcblogs.ml/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>JaveScript</title>
