@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>django AJAX</title>
+      <link href="/2019/12/24/django-AJAX/"/>
+      <url>/2019/12/24/django-AJAX/</url>
+      
+        <content type="html"><![CDATA[<h4 id="window-location-href-is-not-a-function错误解决"><a href="#window-location-href-is-not-a-function错误解决" class="headerlink" title="window.location.href is not a function错误解决"></a>window.location.href is not a function错误解决</h4><h6 id="js报错：window-location-href-is-not-a-function是由于写法问题以及浏览器不兼容导致的，具体解决方法如下："><a href="#js报错：window-location-href-is-not-a-function是由于写法问题以及浏览器不兼容导致的，具体解决方法如下：" class="headerlink" title="js报错：window.location.href is not a function是由于写法问题以及浏览器不兼容导致的，具体解决方法如下："></a>js报错：window.location.href is not a function是由于写法问题以及浏览器不兼容导致的，具体解决方法如下：</h6><p>错误js写法：</p><p><code>window.location.href (&quot;http://www.baidu.com/&quot;);</code></p><p>正确js写法：</p><p><code>window.location.href = &quot;http://www.baidu.com/&quot;;</code></p><h6 id="上面的正确js写法可以兼容绝大部分浏览器，但是在某些版本的firefox浏览器下仍然可能报错，解决办法是采用下面的写法："><a href="#上面的正确js写法可以兼容绝大部分浏览器，但是在某些版本的firefox浏览器下仍然可能报错，解决办法是采用下面的写法：" class="headerlink" title="上面的正确js写法可以兼容绝大部分浏览器，但是在某些版本的firefox浏览器下仍然可能报错，解决办法是采用下面的写法："></a>上面的正确js写法可以兼容绝大部分浏览器，但是在某些版本的firefox浏览器下仍然可能报错，解决办法是采用下面的写法：</h6><p><code>window.location = &quot;http://www.baidu.com/&quot;;</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> django </tag>
+            
+            <tag> ajax </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Djnago</title>
       <link href="/2019/12/20/Djnago/"/>
       <url>/2019/12/20/Djnago/</url>
