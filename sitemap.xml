@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.zhcblogs.ml/2019/12/24/django-AJAX/</loc>
+    <loc>https://www.zhcblogs.ml/2019/12/20/Djnago/</loc>
     
-    <lastmod>2019-12-24T00:57:16.392Z</lastmod>
+    <lastmod>2019-12-25T02:59:34.863Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.zhcblogs.ml/2019/12/20/Djnago/</loc>
+    <loc>https://www.zhcblogs.ml/2019/12/25/django-filters/</loc>
     
-    <lastmod>2019-12-20T06:03:08.259Z</lastmod>
+    <lastmod>2019-12-25T02:39:11.799Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zhcblogs.ml/2019/12/24/django-AJAX/</loc>
+    
+    <lastmod>2019-12-24T00:57:16.392Z</lastmod>
     
   </url>
   

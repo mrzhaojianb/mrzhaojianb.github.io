@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.zhcblogs.ml/"/>
-  <updated>2019-12-24T00:57:16.392Z</updated>
+  <updated>2019-12-25T02:39:11.799Z</updated>
   <id>https://www.zhcblogs.ml/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>django_filters</title>
+    <link href="https://www.zhcblogs.ml/2019/12/25/django-filters/"/>
+    <id>https://www.zhcblogs.ml/2019/12/25/django-filters/</id>
+    <published>2019-12-25T01:31:00.000Z</published>
+    <updated>2019-12-25T02:39:11.799Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="django前端页面注释"><a href="#django前端页面注释" class="headerlink" title="django前端页面注释"></a>django前端页面注释</h6><p>单行注释</p><p>多行注释</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;% comment %&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#123;% endcomment %&#125;</span></pre></td></tr></table></figure><a id="more"></a><p>过滤器safe：禁用转义，告诉模板这个变量是安全的，可以解释执行。</p><p><code></code></p><p>标签autoescape：设置一段代码都禁用转义，接受on、off参数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;%autoescape off%&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#123;%endautoescape%&#125;</span></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h6 id=&quot;django前端页面注释&quot;&gt;&lt;a href=&quot;#django前端页面注释&quot; class=&quot;headerlink&quot; title=&quot;django前端页面注释&quot;&gt;&lt;/a&gt;django前端页面注释&lt;/h6&gt;&lt;p&gt;单行注释&lt;/p&gt;
+&lt;p&gt;多行注释&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% comment %&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% endcomment %&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="django" scheme="https://www.zhcblogs.ml/tags/django/"/>
+    
+  </entry>
   
   <entry>
     <title>django AJAX</title>
@@ -47,16 +70,13 @@
     <link href="https://www.zhcblogs.ml/2019/12/20/Djnago/"/>
     <id>https://www.zhcblogs.ml/2019/12/20/Djnago/</id>
     <published>2019-12-20T05:45:00.000Z</published>
-    <updated>2019-12-20T06:03:08.259Z</updated>
+    <updated>2019-12-25T02:59:34.863Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="URL配置"><a href="#URL配置" class="headerlink" title="URL配置"></a>URL配置</h4><p><img src="/images/pasted-2.png" alt="upload successful"></p><p><img src="/images/pasted-1.png" alt="upload successful"></p><h4 id="ORM模型"><a href="#ORM模型" class="headerlink" title="ORM模型"></a>ORM模型</h4><p><img src="/images/pasted-0.png" alt="upload successful"></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="URL配置"><a href="#URL配置" class="headerlink" title="URL配置"></a>URL配置</h4><p><img src="/images/pasted-2.png" alt="upload successful"></p><a id="more"></a><p><img src="/images/pasted-1.png" alt="upload successful"></p><h4 id="ORM模型"><a href="#ORM模型" class="headerlink" title="ORM模型"></a>ORM模型</h4><p><img src="/images/pasted-0.png" alt="upload successful"></p><hr><h4 id="管理类继承"><a href="#管理类继承" class="headerlink" title="管理类继承"></a>管理类继承</h4><p><img src="/images/pasted-3.png" alt="upload successful"></p><hr><h4 id="urls匹配"><a href="#urls匹配" class="headerlink" title="urls匹配"></a>urls匹配</h4><p><img src="/images/pasted-4.png" alt="upload successful"></p><hr><h4 id="ajax请求"><a href="#ajax请求" class="headerlink" title="ajax请求"></a>ajax请求</h4><p><img src="/images/pasted-5.png" alt="upload successful"></p><hr><h4 id="CSRF攻击"><a href="#CSRF攻击" class="headerlink" title="CSRF攻击"></a>CSRF攻击</h4><p><img src="/images/pasted-8.png" alt="upload successful"></p><hr><h4 id="Cookie-amp-session"><a href="#Cookie-amp-session" class="headerlink" title="Cookie &amp; session"></a>Cookie &amp; session</h4><h6 id="1-Cookie"><a href="#1-Cookie" class="headerlink" title="1.Cookie"></a>1.Cookie</h6><p><img src="/images/pasted-6.png" alt="upload successful"></p><h6 id="2-session"><a href="#2-session" class="headerlink" title="2.session"></a>2.session</h6><p><img src="/images/pasted-7.png" alt="upload successful"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;URL配置&quot;&gt;&lt;a href=&quot;#URL配置&quot; class=&quot;headerlink&quot; title=&quot;URL配置&quot;&gt;&lt;/a&gt;URL配置&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/
-      
+      &lt;h4 id=&quot;URL配置&quot;&gt;&lt;a href=&quot;#URL配置&quot; class=&quot;headerlink&quot; title=&quot;URL配置&quot;&gt;&lt;/a&gt;URL配置&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
     
     </summary>
     

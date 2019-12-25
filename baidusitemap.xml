@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zhcblogs.ml/2019/12/20/Djnago/</loc>
+    <lastmod>2019-12-25</lastmod>
+  </url>  <url>
+    <loc>https://www.zhcblogs.ml/2019/12/25/django-filters/</loc>
+    <lastmod>2019-12-25</lastmod>
+  </url>  <url>
     <loc>https://www.zhcblogs.ml/2019/12/24/django-AJAX/</loc>
     <lastmod>2019-12-24</lastmod>
-  </url>  <url>
-    <loc>https://www.zhcblogs.ml/2019/12/20/Djnago/</loc>
-    <lastmod>2019-12-20</lastmod>
   </url>  <url>
     <loc>https://www.zhcblogs.ml/2019/12/14/python-Mysql%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%9D%91/</loc>
     <lastmod>2019-12-14</lastmod>
