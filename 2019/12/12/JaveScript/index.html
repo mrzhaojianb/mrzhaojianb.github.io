@@ -69,7 +69,7 @@
 <meta property="og:site_name" content="Mr.zhao的个人博客">
 <meta property="og:description" content="1. JavaScript嵌入页面的方式1.行间事件（主要用于事件） &amp;lt;input type&#x3D;&amp;quot;button&amp;quot; name&#x3D;&amp;quot;&amp;quot; onclick&#x3D;&amp;quot;alert(&amp;#39;ok！&amp;#39;);&amp;quot;&amp;gt; 2.页面script标签嵌入 1&amp;lt;script type&amp;#x3D;&amp;quot;text&amp;#x2F;javascript&amp;quo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-12T09:55:49.054Z">
+<meta property="og:updated_time" content="2019-12-30T11:21:38.445Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://www.zhcblogs.ml/2019/12/12/JaveScript/">
@@ -263,10 +263,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-12-12 08:41:00 / 修改时间：17:55:49" itemprop="dateCreated datePublished" datetime="2019-12-12T08:41:00+08:00">2019-12-12</time>
+              <time title="创建时间：2019-12-12 08:41:00" itemprop="dateCreated datePublished" datetime="2019-12-12T08:41:00+08:00">2019-12-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-30 19:21:38" itemprop="dateModified" datetime="2019-12-30T19:21:38+08:00">2019-12-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -334,6 +340,7 @@
 <p>3.外部引入</p>
 <p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/index.js&quot;&gt;&lt;/script&gt;</code></p>
 <p><strong>script和htmlxie写在同一html里（script写在body之前），要用window.onload d = function()加载渲染</strong></p>
+<a id="more"></a>
 <h4 id="2-变量类型"><a href="#2-变量类型" class="headerlink" title="2. 变量类型"></a>2. 变量类型</h4><p>JavaScript 是一种弱类型语言，javascript的变量类型由它的值来决定。 定义变量需要用关键字 ‘var’</p>
 <h6 id="5种基本数据类型："><a href="#5种基本数据类型：" class="headerlink" title="5种基本数据类型："></a>5种基本数据类型：</h6><p>1 number 数字类型</p>
 <p>2、string 字符串类型</p>
@@ -341,7 +348,6 @@
 <p>4、undefined undefined类型，变量声明未初始化，它的值就是undefined</p>
 <p>5、null null类型，表示空对象，如果定义的变量将来准备保存对象，可以将变量初始化为null,在页面上获取不到对象，返回的值就是null</p>
 <h6 id="1种复合类型："><a href="#1种复合类型：" class="headerlink" title="1种复合类型："></a>1种复合类型：</h6><p>object</p>
-<a id="more"></a>
 <h6 id="变量、函数、属性、函数参数命名规范"><a href="#变量、函数、属性、函数参数命名规范" class="headerlink" title="变量、函数、属性、函数参数命名规范"></a>变量、函数、属性、函数参数命名规范</h6><p>1、区分大小写<br>2、第一个字符必须是字母、下划线（_）或者美元符号（$）<br>3、其他字符可以是字母、下划线、美元符或数字</p>
 <h6 id="匈牙利命名风格："><a href="#匈牙利命名风格：" class="headerlink" title="匈牙利命名风格："></a>匈牙利命名风格：</h6><p>对象o Object 比如：oDiv<br>数组a Array 比如：aItems<br>字符串s String 比如：sUserName<br>整数i Integer 比如：iItemCount<br>布尔值b Boolean 比如：bIsComplete<br>浮点数f Float 比如：fPrice<br>函数fn Function 比如：fnHandler<br>正则表达式re RegExp 比如：reEmailCheck</p>
 <h4 id="3-操作元素属性"><a href="#3-操作元素属性" class="headerlink" title="3.操作元素属性"></a>3.操作元素属性</h4><p>获取的页面元素，就可以对页面元素的属性进行操作，属性的操作包括属性的读和写。</p>
