@@ -76,7 +76,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-13.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-14.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-15.png">
-<meta property="og:updated_time" content="2019-12-30T11:37:13.581Z">
+<meta property="og:updated_time" content="2019-12-30T13:44:56.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-9.png">
 
@@ -273,7 +273,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-12-30 13:38:00 / 修改时间：19:37:13" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
+              <time title="创建时间：2019-12-30 13:38:00 / 修改时间：21:44:56" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
             </span>
 
           
@@ -304,14 +304,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>2.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -332,10 +332,19 @@
 <p>git reset &#45;&#45;hard HEAD^ 回退上一个版本</p>
 <a id="more"></a>
 
-<p>(…HEAD后的上三角代表回退几个版本，也可以使⽤HEAD&#126;1 表示当前版本的前⼀个版本,HEAD&#126;100 表示当前版本的前100版本，也可使用git reset –hard 版本号)</p>
+<p>(…HEAD后的上三角代表回退几个版本，也可以使⽤HEAD&#126;1 表示当前版本的前⼀个版本,HEAD&#126;100 表示当前版本的前100版本，也可使用git reset –hard 版本号,支持链式操作，如：git checkout HEAD<del>^2</del>2,^后可以接数字，代表回退到第几个父节点)</p>
+<p>git revert -n 版本号 反做某一版本(取消此版本的操作,大概意思)，生成新的版本号(或适用于远程分支[多人协作]修改)</p>
 <p>git reflog 查看操作记录</p>
 <p>git checkout &#45;&#45; file  撤销工作区操作</p>
 <p>git reset HEAD file 撤销暂存区修改，重新放回⼯作区。</p>
+<p>git cherry-pick [版本号]（可以多个） 整理提交记录</p>
+<p>git rebase -i (branch or HEAD~) 复制记录，生成新分支</p>
+<p>git tag [name] A结点  将A结点命名为name的锚点，可以commit提交到锚点</p>
+<p>git describe [ref]  可以是任何能被 Git 识别成提交记录的引用，如果你没有指定的话，Git 会以你目前所检出的位置（HEAD）。</p>
+<p>它输出的结果是这样的：</p>
+<p>&#60;tag&#62;_&#60;numCommits&#62;_g&#60;hash&#62;</p>
+<p>tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 tag 相差有多少个提交记录， hash 表示的是你所给定的 ref 所表示的提交记录哈希值的前几位。</p>
+<p>当 ref 提交记录上有某个标签时，则只输出标签名称</p>
 <h6 id="2-1-工作区和暂存区"><a href="#2-1-工作区和暂存区" class="headerlink" title="2.1 工作区和暂存区"></a>2.1 工作区和暂存区</h6><p>⼯作区(Working Directory)</p>
 <p>电脑中的⽬录，⽐如我们的git_test，就是⼀个⼯作区。</p>
 <p>版本库(Repository)</p>
@@ -369,6 +378,7 @@
 <p>合并某分⽀到当前分⽀：git merge [name]</p>
 <p>删除分⽀：git branch -d [name]</p>
 <p>查看分支合并情况：git log &#45;&#45;graph &#45;&#45;pretty=oneline</p>
+<p>移动branch1分支到branch2上: git branch -f [branch1]  [branch2]</p>
 <h6 id="4-2-解决分支冲突"><a href="#4-2-解决分支冲突" class="headerlink" title="4.2 解决分支冲突"></a>4.2 解决分支冲突</h6><p>分支冲突后，git会⽤&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;标记出不同分⽀的内容，例：</p>
 <p><img src="/images/pasted-14.png" alt="upload successful"></p>
 <p>删除标记后再git add [name] ,git commit ,git merge [分支]</p>
@@ -594,7 +604,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
