@@ -61,13 +61,13 @@
         }
     })();
 </script>
-  <meta name="description" content="1. 创建版本库git init初始化 2. 版本创建与回退git add […] 提交到暂存区 git commit -m ‘(版本说明)’ 提交到当前分支 git status 查看当前⼯作树的状态 文件颜色代表：红色工作区，绿色暂存区 git log 查看版本记录 git reset –hard HEAD^ 回退上一个版本">
+  <meta name="description" content="1. 创建版本库git init初始化 2. 版本创建与回退git add file 提交到暂存区 git commit -m ‘(版本说明)’ 提交到当前分支 git status 查看当前⼯作树的状态 文件颜色代表：红色工作区，绿色暂存区 git log 查看版本记录 git reset –hard HEAD^ 回退上一个版本">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git分布式版本控制系统">
 <meta property="og:url" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;2019&#x2F;12&#x2F;30&#x2F;git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F&#x2F;index.html">
 <meta property="og:site_name" content="Mr.zhao的个人博客">
-<meta property="og:description" content="1. 创建版本库git init初始化 2. 版本创建与回退git add […] 提交到暂存区 git commit -m ‘(版本说明)’ 提交到当前分支 git status 查看当前⼯作树的状态 文件颜色代表：红色工作区，绿色暂存区 git log 查看版本记录 git reset –hard HEAD^ 回退上一个版本">
+<meta property="og:description" content="1. 创建版本库git init初始化 2. 版本创建与回退git add file 提交到暂存区 git commit -m ‘(版本说明)’ 提交到当前分支 git status 查看当前⼯作树的状态 文件颜色代表：红色工作区，绿色暂存区 git log 查看版本记录 git reset –hard HEAD^ 回退上一个版本">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-9.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-10.png">
@@ -76,7 +76,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-13.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-14.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-15.png">
-<meta property="og:updated_time" content="2019-12-30T10:06:19.462Z">
+<meta property="og:updated_time" content="2019-12-30T10:21:08.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-9.png">
 
@@ -273,7 +273,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-12-30 13:38:00 / 修改时间：18:06:19" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
+              <time title="创建时间：2019-12-30 13:38:00 / 修改时间：18:21:08" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
             </span>
 
           
@@ -304,7 +304,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -324,26 +324,27 @@
 
       
         <h5 id="1-创建版本库"><a href="#1-创建版本库" class="headerlink" title="1. 创建版本库"></a>1. 创建版本库</h5><p>git init初始化</p>
-<h5 id="2-版本创建与回退"><a href="#2-版本创建与回退" class="headerlink" title="2. 版本创建与回退"></a>2. 版本创建与回退</h5><p>git add […] 提交到暂存区</p>
+<h5 id="2-版本创建与回退"><a href="#2-版本创建与回退" class="headerlink" title="2. 版本创建与回退"></a>2. 版本创建与回退</h5><p>git add file 提交到暂存区</p>
 <p>git commit -m ‘(版本说明)’ 提交到当前分支</p>
 <p>git status 查看当前⼯作树的状态</p>
 <p>文件颜色代表：红色工作区，绿色暂存区</p>
 <p>git log 查看版本记录</p>
 <p>git reset –hard HEAD^ 回退上一个版本</p>
 <a id="more"></a>
-<p>(…HEAD后的上三角代表回退几个版本，也可以使⽤HEAD<del>1表示当前版本的前⼀个版本,HEAD</del>100表示当前版本的前100版本，也可使用git reset –hard 版本号)</p>
+
+<p>(…HEAD后的上三角代表回退几个版本，也可以使⽤HEAD&#126;1 表示当前版本的前⼀个版本,HEAD&#126;100 表示当前版本的前100版本，也可使用git reset –hard 版本号)</p>
 <p>git reflog 查看操作记录</p>
 <p>git checkout – file  撤销工作区操作</p>
 <p>git reset HEAD file 撤销暂存区修改，重新放回⼯作区。</p>
 <h6 id="2-1-工作区和暂存区"><a href="#2-1-工作区和暂存区" class="headerlink" title="2.1 工作区和暂存区"></a>2.1 工作区和暂存区</h6><p>⼯作区(Working Directory)</p>
 <p>电脑中的⽬录，⽐如我们的git_test，就是⼀个⼯作区。</p>
 <p>版本库(Repository)</p>
-<p>⼯作区有⼀个隐藏⽬录.git，这个不是⼯作区，⽽是git的版本库。<br>git的版本库⾥存了很多东⻄，其中最重要的就是称为stage(或者叫<br>index)的暂存区，还有git为我们⾃动创建的第⼀个分⽀master，以及指向<br>master的⼀个指针叫HEAD。</p>
+<p>⼯作区有⼀个隐藏⽬录.git，这个不是⼯作区，⽽是git的版本库。git的版本库⾥存了很多东⻄，其中最重要的就是称为stage(或者叫index)的暂存区，还有git为我们⾃动创建的第⼀个分⽀master，以及指向master的⼀个指针叫HEAD。</p>
 <p><img src="/images/pasted-9.png" alt="upload successful"></p>
 <h6 id="2-2-撤销操作"><a href="#2-2-撤销操作" class="headerlink" title="2.2 撤销操作"></a>2.2 撤销操作</h6><p>⼩结：</p>
 <p>场景1：当你改乱了⼯作区某个⽂件的内容，想直接丢弃⼯作区的修改时，⽤命令git checkout – file。</p>
-<p>场景2：当你不但改乱了⼯作区某个⽂件的内容，还添加到了暂存区时，想丢弃修改，分两步，第⼀步⽤命令git reset HEAD file，就回到了场景1，<br>第⼆步按场景1操作。</p>
-<p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本<br>回退⼀节。</p>
+<p>场景2：当你不但改乱了⼯作区某个⽂件的内容，还添加到了暂存区时，想丢弃修改，分两步，第⼀步⽤命令git reset HEAD file，就回到了场景1，第⼆步按场景1操作。</p>
+<p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退⼀节。</p>
 <h6 id="2-3-对⽐⽂件的不同"><a href="#2-3-对⽐⽂件的不同" class="headerlink" title="2.3 对⽐⽂件的不同"></a>2.3 对⽐⽂件的不同</h6><p>git diff 版本（a） –file（b） 对比版本和工作区file的不同</p>
 <p><img src="/images/pasted-10.png" alt="upload successful"></p>
 <p>—a 代表版本</p>
@@ -352,13 +353,13 @@
 <p>git diff 版本（HEAD）版本（HEAD） –file</p>
 <h5 id="3-删除文件"><a href="#3-删除文件" class="headerlink" title="3. 删除文件"></a>3. 删除文件</h5><p>rm file</p>
 <p>gitstatus命令会⽴刻提示哪些⽂件被删除了。</p>
-<p>现在你有两个选择，⼀是确实要从版本库中删除该⽂件，那就⽤命令<br>git rm删掉，并且git commit</p>
-<p>另⼀种情况是删错了，可以直接使⽤git checkout – code2.txt,这样⽂<br>件code2.txt⼜回来了。</p>
-<h5 id="4-分支管理"><a href="#4-分支管理" class="headerlink" title="4. 分支管理"></a>4. 分支管理</h5><h6 id="4-1-创建与合并分⽀"><a href="#4-1-创建与合并分⽀" class="headerlink" title="4.1 创建与合并分⽀"></a>4.1 创建与合并分⽀</h6><p>在git⾥，这个分⽀叫主分⽀，即master分<br>⽀。HEAD严格来说不是指向提交，⽽是指向master，master才是指向提交<br>的，所以，HEAD指向的就是当前分⽀。</p>
+<p>现在你有两个选择，⼀是确实要从版本库中删除该⽂件，那就⽤命令<br>git rm删掉，并且git commit;</p>
+<p>另⼀种情况是删错了，可以直接使⽤git checkout – code2.txt,这样⽂件code2.txt⼜回来了。</p>
+<h5 id="4-分支管理"><a href="#4-分支管理" class="headerlink" title="4. 分支管理"></a>4. 分支管理</h5><h6 id="4-1-创建与合并分⽀"><a href="#4-1-创建与合并分⽀" class="headerlink" title="4.1 创建与合并分⽀"></a>4.1 创建与合并分⽀</h6><p>在git⾥，这个分⽀叫主分⽀，即master分⽀。HEAD严格来说不是指向提交，⽽是指向master，master才是指向提交的，所以，HEAD指向的就是当前分⽀。</p>
 <p>例：<br><img src="/images/pasted-11.png" alt="upload successful"></p>
-<p>当我们创建新的分⽀，例如dev时，git新建了⼀个指针叫dev，指向<br>master相同的提交，再把HEAD指向dev，就表示当前分⽀在dev上：</p>
+<p>当我们创建新的分⽀，例如dev时，git新建了⼀个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分⽀在dev上：</p>
 <p><img src="/images/pasted-12.png" alt="upload successful"></p>
-<p>git创建⼀个分⽀很快，因为除了增加⼀个dev指针，改变HEAD的指向，⼯<br>作区的⽂件都没有任何变化。</p>
+<p>git创建⼀个分⽀很快，因为除了增加⼀个dev指针，改变HEAD的指向，⼯作区的⽂件都没有任何变化。</p>
 <p><img src="/images/pasted-13.png" alt="upload successful"></p>
 <p>⼩结：</p>
 <p>查看分⽀：git branch</p>
