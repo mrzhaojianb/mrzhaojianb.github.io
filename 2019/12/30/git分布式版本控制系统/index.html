@@ -76,7 +76,9 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-13.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-14.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-15.png">
-<meta property="og:updated_time" content="2019-12-30T13:44:56.601Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-18.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-19.png">
+<meta property="og:updated_time" content="2019-12-31T05:21:05.951Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;www.zhcblogs.ml&#x2F;images&#x2F;pasted-9.png">
 
@@ -271,10 +273,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-12-30 13:38:00 / 修改时间：21:44:56" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
+              <time title="创建时间：2019-12-30 13:38:00" itemprop="dateCreated datePublished" datetime="2019-12-30T13:38:00+08:00">2019-12-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-31 13:21:05" itemprop="dateModified" datetime="2019-12-31T13:21:05+08:00">2019-12-31</time>
+              </span>
 
           
             <span id="/2019/12/30/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/" class="post-meta-item leancloud_visitors" data-flag-title="git分布式版本控制系统" title="热度">
@@ -304,14 +312,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.5k</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -416,6 +424,21 @@
 </tbody></table>
 <p>⼩结：</p>
 <p>修复bug时，我们会通过创建新的bug分⽀进⾏修复，然后合并，最后删除；当⼿头⼯作没有完成时，先把⼯作现场git stash⼀下，然后去修复bug，修复后，再git stash pop，恢复⼯作现场。</p>
+<h5 id="5-远程仓库"><a href="#5-远程仓库" class="headerlink" title="5. 远程仓库"></a>5. 远程仓库</h5><p>克隆远程仓库：git clone (地址)</p>
+<p>拉取远程仓库(默认merge，拉过来合并生成新结点)：git pull （地址 or 定义的远程仓库名）（分支名）</p>
+<p><img src="/images/pasted-18.png" alt="upload successful"></p>
+<hr>
+<p>通过rebase方式拉取(生成一条线，记录干净)：git pull –rebase</p>
+<p><img src="/images/pasted-19.png" alt="upload successful"></p>
+<hr>
+<p>推送本地仓库到远程仓库上：git push (地址 or 定义的远程仓库名）（分支名）</p>
+<p>添加发布者的远程仓库：git remote add upstream (地址)</p>
+<p>分支跟踪远程仓库：</p>
+<ol>
+<li>git checkout -b [分支名] [远程名]/[分支名]，例<br>git checkout -b foo origin/master </li>
+<li>git branch -u [远程名]/[分支名] [分支名]，例<br>git branch -u origin/master foo</li>
+</ol>
+<p>自己的远程仓库为origin，发布者的远程仓库一般命名为upstream</p>
 
     </div>
     <div>
@@ -466,7 +489,10 @@
     <a href="/2019/12/25/django-filters/" rel="prev" title="django_filters">
       <i class="fa fa-chevron-left"></i> django_filters
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/02/%E8%99%AB/" rel="next" title="爬虫">
+      爬虫 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -527,7 +553,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-创建版本库"><span class="nav-text">1. 创建版本库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-版本创建与回退"><span class="nav-text">2. 版本创建与回退</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-工作区和暂存区"><span class="nav-text">2.1 工作区和暂存区</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-撤销操作"><span class="nav-text">2.2 撤销操作</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-对⽐⽂件的不同"><span class="nav-text">2.3 对⽐⽂件的不同</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-删除文件"><span class="nav-text">3. 删除文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-分支管理"><span class="nav-text">4. 分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#4-1-创建与合并分⽀"><span class="nav-text">4.1 创建与合并分⽀</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-2-解决分支冲突"><span class="nav-text">4.2 解决分支冲突</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-3-分⽀管理策略"><span class="nav-text">4.3 分⽀管理策略</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-4-Bug分⽀"><span class="nav-text">4.4 Bug分⽀</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-创建版本库"><span class="nav-text">1. 创建版本库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-版本创建与回退"><span class="nav-text">2. 版本创建与回退</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-工作区和暂存区"><span class="nav-text">2.1 工作区和暂存区</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-撤销操作"><span class="nav-text">2.2 撤销操作</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-对⽐⽂件的不同"><span class="nav-text">2.3 对⽐⽂件的不同</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-删除文件"><span class="nav-text">3. 删除文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-分支管理"><span class="nav-text">4. 分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#4-1-创建与合并分⽀"><span class="nav-text">4.1 创建与合并分⽀</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-2-解决分支冲突"><span class="nav-text">4.2 解决分支冲突</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-3-分⽀管理策略"><span class="nav-text">4.3 分⽀管理策略</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-4-Bug分⽀"><span class="nav-text">4.4 Bug分⽀</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-远程仓库"><span class="nav-text">5. 远程仓库</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -543,7 +569,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -556,7 +582,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -577,7 +603,7 @@
 
       </div>
       <div id="music163player">
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=167827&auto=1&height=66"></iframe>
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=167705&auto=1&height=66"></iframe>
       </div>
     </div>
   </aside>
@@ -593,8 +619,8 @@
 
 <div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -604,13 +630,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">7k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
 </div>
 <!--
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
