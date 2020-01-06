@@ -4,11 +4,62 @@
   
     
     <entry>
+      <title>正则表达式</title>
+      <link href="/2020/01/06/%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <url>/2020/01/06/%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<p>匹配一次结束：</p><ul><li>re.match() 从头匹配，若开头匹配不到，则失败</li><li>re.search() 不从头匹配</li></ul><hr><p>匹配多次</p><ul><li>re.findall(),找出所有符合条件的内容，放回一个列表<a id="more"></a></li><li>re.sub([匹配字符]，[替换字符]，[查找的字符串])，替换掉所有符合条件的内容，返回一个字符串</li><li>re.split(),分割字符串，返回列表</li></ul><p>re.complie(),写入常用匹配字符串，提高效率</p><p><img src="/images/pasted-26.png" alt="upload successful"></p><hr><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">result = re.match(<span class="string">'.*?(\d+).*?(\d+)'</span>,<span class="string">'xaxsax99xsaxsa55'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">result.group()等价于result.group(<span class="number">0</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">result.group(<span class="number">1</span>)是第一个括号（子组）的内容,即<span class="number">99</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">result.groups()返回所有的子组，从<span class="number">1</span>开始</span></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>json</title>
+      <link href="/2020/01/06/json/"/>
+      <url>/2020/01/06/json/</url>
+      
+        <content type="html"><![CDATA[<p>json.loads:字符串转dict对象</p><p>json.dumps：dict对象转字符串</p><p>json.load：文件对象转python dict对象</p><p><img src="/images/pasted-24.png" alt="upload successful"></p><p>json.dump：保存dict对象为文件对象</p><p><img src="/images/pasted-25.png" alt="upload successful"></p><p>ensure_ascii= False：不自动转ascii码</p><p>indent = 2，格式化空两格</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> json </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>django-Hatstack全文搜索引擎</title>
+      <link href="/2020/01/04/jango-Hatstack%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+      <url>/2020/01/04/jango-Hatstack%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</url>
+      
+        <content type="html"><![CDATA[<p>Django3中django-haystack ，巨坑</p><p>报错</p><p><img src="/images/pasted-22.png" alt="upload successful"></p><p>报 cannot import name six 原因是django3中django/utils目录下的six.py文件已被移除，可自己从别的地方导入six.py文件</p><p>再次运行后依旧报错：</p><a id="more"></a><p><img src="/images/pasted-23.png" alt="upload successful"></p><p>cannot import name ‘python_2_unicode_compatible’</p><p>原因是’python_2_unicode_compatible’ 功能仅在Django 1.5版本中添加。</p><p>可修改…/haystack/utils/<strong>init</strong>.py文件：</p><p>尝试</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.utils.six <span class="keyword">import</span> python_2_unicode_compatible</span></pre></td></tr></table></figure><p>代替</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.utils.encoding <span class="keyword">import</span> python_2_unicode_compatible</span></pre></td></tr></table></figure><p>事实证明自己动手丰衣足食</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>爬虫</title>
       <link href="/2020/01/02/%E8%99%AB/"/>
       <url>/2020/01/02/%E8%99%AB/</url>
       
-        <content type="html"><![CDATA[<p>长连接：Connection:keep-alive</p><p>accept-language:zh-CN,zh;q=0.9</p><p>q代表权重，访问可能性为0.9</p><p>http协议基于tcp协议，三次握手四次断开</p><h5 id="响应状态码"><a href="#响应状态码" class="headerlink" title="响应状态码"></a>响应状态码</h5><p>响应状态代码有三位数字组成，第一个数字定义了响应的类别，且有五种可能取值。</p><a id="more"></a><h6 id="常见"><a href="#常见" class="headerlink" title="常见"></a>常见</h6><ul><li>100~199：表示服务器成功接收部分请求，要求客户端继续提交其余请才能完成整个处理过程。</li><li>200~299：表示服务器成功接收请求并已完成整个处理过程。常用200（OK请求成功）。</li><li>300~399：为完成请求，客户需进一步细化请求。例如：请求的资源已移动一个新地址、常用302（所请求的页面已经临时转移至新的url）、307和304（使用缓存资源）。</li><li>400~499：客户端的请求有错误，常用404（服务器无法找到被请求的面）、403（服务器拒绝访问，权限不够）。</li><li>500~599：服务器端出现错误，常用500（请求未完成。服务器遇到不可知的情况）。</li></ul><p>200：请求成功</p><p>302、304、307：使用缓存资源</p><p>403、404：常用404（服务器无法找到被请求的页面）、403（服务器拒绝访问，权限不够）。</p><p>500：请求未完成。服务器遇到不可预知的情况</p>]]></content>
+        <content type="html"><![CDATA[<p>长连接：Connection:keep-alive</p><p>accept-language:zh-CN,zh;q=0.9</p><p>q代表权重，访问可能性为0.9</p><p>http协议基于tcp协议，三次握手四次断开</p><h5 id="响应状态码"><a href="#响应状态码" class="headerlink" title="响应状态码"></a>响应状态码</h5><p>响应状态代码有三位数字组成，第一个数字定义了响应的类别，且有五种可能取值。</p><a id="more"></a><h6 id="常见"><a href="#常见" class="headerlink" title="常见"></a>常见</h6><ul><li>100~199：表示服务器成功接收部分请求，要求客户端继续提交其余请才能完成整个处理过程。</li><li>200~299：表示服务器成功接收请求并已完成整个处理过程。常用200（OK请求成功）。</li><li>300~399：为完成请求，客户需进一步细化请求。例如：请求的资源已移动一个新地址、常用302（所请求的页面已经临时转移至新的url）、307和304（使用缓存资源）。</li><li>400~499：客户端的请求有错误，常用404（服务器无法找到被请求的面）、403（服务器拒绝访问，权限不够）。</li><li>500~599：服务器端出现错误，常用500（请求未完成。服务器遇到不可知的情况）。</li></ul><p>200：请求成功</p><p>302、304、307：使用缓存资源</p><p>403、404：常用404（服务器无法找到被请求的页面）、403（服务器拒绝访问，权限不够）。</p><p>500：请求未完成。服务器遇到不可预知的情况</p><p>from retrying import retry</p><p>@retry(stop_max_attempt_number = 3)<br>类似于装饰器用法，=号后是尝试请求的次数</p>]]></content>
       
       
       
@@ -99,7 +150,7 @@
       <link href="/2019/12/14/python-Mysql%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%9D%91/"/>
       <url>/2019/12/14/python-Mysql%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%9D%91/</url>
       
-        <content type="html"><![CDATA[<h4 id="python在直接插入mysql时内容带有引号会报错"><a href="#python在直接插入mysql时内容带有引号会报错" class="headerlink" title="python在直接插入mysql时内容带有引号会报错"></a>python在直接插入mysql时内容带有引号会报错</h4><p>处理方法：</p><p>1.使用pymysql的一个方法自动转义可避坑</p><p><strong>pymysql.escape_string(str)</strong></p><p>*<em>str填要转义的字符 *</em></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">insert_dialogues_sql &#x3D; &quot;INSERT INTO dialogues(&#96;movie_id&#96;,&#96;ccontent&#96;,&#96;econtent&#96;,&#96;start_time&#96;,&#96;created_at&#96;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">VALUES(&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;)&quot; % (movie_id, pymysql.escape_string(ccontent),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">pymysql.escape_string(econtent),&#39;0&#39;,created_at)</span></pre></td></tr></table></figure><p>2.使用转义字符咯</p><p>个人不喜</p>]]></content>
+        <content type="html"><![CDATA[<h4 id="python在直接插入mysql时内容带有引号会报错"><a href="#python在直接插入mysql时内容带有引号会报错" class="headerlink" title="python在直接插入mysql时内容带有引号会报错"></a>python在直接插入mysql时内容带有引号会报错</h4><p>处理方法：</p><p>1.使用pymysql的一个方法自动转义可避坑</p><p><strong>pymysql.escape_string(str)</strong></p><p>*<em>str填要转义的字符 *</em></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">insert_dialogues_sql = <span class="string">"INSERT INTO dialogues(`movie_id`,`ccontent`,`econtent`,`start_time`,`created_at`)</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="string"></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="string">VALUES('%s','%s','%s','%s','%s')"</span> % (movie_id, pymysql.escape_string(ccontent),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">pymysql.escape_string(econtent),<span class="string">'0'</span>,created_at)</span></pre></td></tr></table></figure><p>2.使用转义字符咯</p><p>个人不喜</p>]]></content>
       
       
       <categories>
